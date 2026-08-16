@@ -1,0 +1,67 @@
+# ============================================
+#   Configuration ViriSur
+# ============================================
+
+# Conteneurs proteges
+conteneurs:
+  - CHEST
+  - TRAPPED_CHEST
+  - BARREL
+  - SHULKER_BOX
+  - WHITE_SHULKER_BOX
+  - ORANGE_SHULKER_BOX
+  - MAGENTA_SHULKER_BOX
+  - LIGHT_BLUE_SHULKER_BOX
+  - YELLOW_SHULKER_BOX
+  - LIME_SHULKER_BOX
+  - PINK_SHULKER_BOX
+  - GRAY_SHULKER_BOX
+  - LIGHT_GRAY_SHULKER_BOX
+  - CYAN_SHULKER_BOX
+  - PURPLE_SHULKER_BOX
+  - BLUE_SHULKER_BOX
+  - BROWN_SHULKER_BOX
+  - GREEN_SHULKER_BOX
+  - RED_SHULKER_BOX
+  - BLACK_SHULKER_BOX
+
+# Vol
+vol:
+  # Cooldown apres un vol reussi (minutes)
+  cooldown-minutes: 2
+  # Nombre d'items proposes au voleur (min-max)
+  items-min: 1
+  items-max: 3
+  # Quantite max par stack vole (en % du stack, 50 = moitie max)
+  quantite-max-pourcent: 50
+
+# Alarme apres braquage
+alarme:
+  # Duree de l'alarme (minutes)
+  duree-minutes: 5
+  # Distance max pour entendre l'alarme (blocs)
+  distance: 32
+  # Son joue periodiquement
+  son: BLOCK_NOTE_BLOCK_BELL
+  # Intervalle entre les sons (ticks, 20 = 1s)
+  intervalle-ticks: 40
+
+# Mini-jeux
+minijeux:
+  # Temps max pour reussir (secondes)
+  timeout-secondes: 25
+  # Nombre d'echec max avant annulation
+  max-echecs: 3
+
+messages:
+  prefix: "&6[ViriSur]&r "
+  place: "&aCoffre protege. Utilise &e/add <joueur>&a en le regardant pour partager l'acces."
+  add-ok: "&a%joueur% peut maintenant ouvrir ce coffre."
+  remove-ok: "&e%joueur% n'a plus acces a ce coffre."
+  pas-proprio: "&cTu n'es pas le proprietaire de ce coffre."
+  pas-coffre: "&cTu dois regarder un coffre protege."
+  vol-reussi: "&c⚠ BRAQUAGE ! Le coffre de &e%proprio%&c se fait voler !"
+  vol-echec: "&cCrochetage rate. Acces refuse."
+  cooldown: "&cTu dois attendre encore &e%time%s&c avant de reessayer."
+  alarme: "&c🔔 Alarme activee sur le coffre de &e%proprio%&c !"
+  destroy-refuse: "&cSeul le proprietaire peut casser ce coffre."

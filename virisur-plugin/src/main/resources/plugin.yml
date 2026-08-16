@@ -1,0 +1,29 @@
+name: ViriSur
+version: '1.1.0'
+main: fr.rp.virisur.ViriSur
+api-version: '1.21'
+author: Baptiste
+description: Coffres proteges, acces partages, crochetage et alarme anti-vol
+
+commands:
+  add:
+    description: Ajouter un joueur a un coffre (en le regardant)
+    usage: /add <joueur>
+    aliases: [cadd]
+  unadd:
+    description: Retirer un joueur d'un coffre (en le regardant)
+    usage: /unadd <joueur>
+    aliases: [cremove, cretrait]
+  coffre:
+    description: Infos sur le coffre regarde
+    usage: /coffre
+    aliases: [chest]
+  virisur:
+    description: Commandes admin ViriSur
+    usage: /virisur <bypass|reload|info>
+    permission: virisur.admin
+
+permissions:
+  virisur.admin:
+    description: Admin ViriSur (bypass, reload)
+    default: op
